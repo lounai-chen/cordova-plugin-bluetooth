@@ -35,4 +35,4 @@ https://github.com/zwand19/CordovaAppleMusic/blob/master/src/ios/CordovaAppleMus
 
 ### 注意事项  
 
-1.按键控制功能的前提，应该当前==播放==的是自己应用的==音乐==
+1.按键控制功能的前提，应该当前播放的是自己应用的音乐
