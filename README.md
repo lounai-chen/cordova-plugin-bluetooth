@@ -9,7 +9,7 @@ Bluetooth Status Plugin
 ```
 declare let cordova: any;
 
-cordova.plugins.BluetoothStatusPlugin.start(msg => {
+Bluetooth.start(msg => {
   alert(msg);
   console.log(msg);
 });
