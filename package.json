@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dongqishu/BluetoothStatusPlugin.git"
+    "url": "git+https://github.com/lounai-chen/cordova-plugin-bluetooth.git"
   },
   "author": "dongqishu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dongqishu/BluetoothStatusPlugin/issues"
+    "url": "https://github.com/lounai-chen/cordova-plugin-bluetooth/issues"
   },
-  "homepage": "https://github.com/dongqishu/BluetoothStatusPlugin#readme"
+  "homepage": "https://github.com/lounai-chen/cordova-plugin-bluetooth#readme"
 }
