@@ -1,4 +1,4 @@
-package com.zzl.intelligence;
+package org.apache.cordova.bluetooth;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
@@ -19,7 +19,7 @@ import android.content.IntentFilter;
 /**
  * This class echoes a string called from JavaScript.
  */
-public class BluetoothStatusPlugin extends CordovaPlugin {
+public class Bluetooth extends CordovaPlugin {
 
     private static final String LOG_TAG = "BleStatusManager";
 
@@ -29,7 +29,7 @@ public class BluetoothStatusPlugin extends CordovaPlugin {
 
     private BluetoothAdapter ba;
 
-    public BluetoothStatusPlugin(){
+    public Bluetooth(){
         this.receiver = null;
     }
 
