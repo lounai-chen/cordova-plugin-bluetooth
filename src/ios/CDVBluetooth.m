@@ -34,8 +34,10 @@
 {
     NSLog(@"开启...");
     initCallback = command.callbackId;
-
     
+//    CDVPluginResult* result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK  messageAsString:@"false"] ;
+//    [self.commandDelegate sendPluginResult:result callbackId:initCallback];
+
     //初始化并设置委托和线程队列，最好一个线程的参数可以为nil，默认会就main线程
     manager = [[CBCentralManager alloc]initWithDelegate:self queue:dispatch_get_main_queue()];
 
@@ -151,10 +153,10 @@
             break;
     }
     NSDictionary* returnObj = nil;
-    CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:error];
+    //CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:error];
     
-    [pluginResult setKeepCallbackAsBool:true];
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:initCallback];
+   // [pluginResult setKeepCallbackAsBool:true];
+   // [self.commandDelegate sendPluginResult:pluginResult callbackId:initCallback];
     
 }
 
@@ -190,7 +192,7 @@
 {
     NSLog(@">>>连接到名称为（%@）的设备-成功",peripheral.name);
     if(![peripheral.name isEqualToString: @"iPhone"]){
-     CDVPluginResult* result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK  messageAsString:peripheral.name] ;
+     CDVPluginResult* result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK  messageAsString:@"true"] ;
      [self.commandDelegate sendPluginResult:result callbackId:initCallback];
     }
     //设置的peripheral委托CBPeripheralDelegate
